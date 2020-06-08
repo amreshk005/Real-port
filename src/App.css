@@ -1,0 +1,58 @@
+.App {
+  font-family: Montserrat, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", " !default";
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2 {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 1.6rem;
+  color: #127eb1;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  transition: color 0.2s ease-out 0s;
+}
+
+.sub-title {
+  font-size: 1.3rem;
+  color: #575757;
+  font-weight: 400;
+  margin-top: 10px !important;
+  transition: color 0.2s ease-out 0s;
+}
+
+.sub-title span {
+  color: #333;
+  font-style: italic;
+  font-weight: 600;
+  transition: color 0.2s ease-out 0s;
+}
+
+.coustom-span {
+  position: relative;
+  font-style: italic;
+  color: #ffffff;
+  font-weight: 600;
+  display: inline-block;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.coustom-span::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: rotate(-2deg);
+  background-color: #127eb1;
+}

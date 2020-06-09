@@ -2,13 +2,14 @@
   width: 100%;
   height: 43rem;
   overflow: hidden;
+  transition: all 0.2s ease-out 0s;
 
   /* border: 1px solid orange; */
 }
 
 .main-header {
   overflow: hidden;
-  height: 48rem;
+  height: 43rem;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
@@ -28,6 +29,7 @@
   /* width: 100%; */
   transform: rotate(-16deg);
   position: absolute;
+  transition: color 0.2s ease-out 0s;
 }
 
 .back-logo {
@@ -44,6 +46,7 @@
   /* border: 1px solid green; */
   z-index: 2;
   position: absolute;
+  transition: color 0.2s ease-out 0s;
 }
 
 .main-heading-1 {
@@ -95,7 +98,7 @@
 .main-scroll {
   width: 2rem;
   height: 2rem;
-  margin: 58% 0 0 20%;
+  margin: 58% 0 0 0%;
   cursor: pointer;
   transform: translate(15vw, 0px);
   transition: all 0.2s ease-out 0s;
@@ -103,4 +106,109 @@
 
 .main-scroll a img {
   width: 1rem;
+  transition: color 0.2s ease-out 0s;
+}
+
+/* media query start here */
+
+@media only screen and (min-width: 1440px) {
+  .main-header-section {
+    height: 45rem;
+  }
+  .main-scroll {
+    margin: 47% 0 0 0%;
+    /* transform: ; */
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main-header-section {
+    height: 36rem;
+  }
+  .main-scroll {
+    margin: 55% 0 0 0%;
+  }
+  .back-logo {
+    height: 33%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .main-header-section {
+    height: 43rem;
+  }
+  .main-scroll {
+    margin: 55% 0 0 0%;
+  }
+  .back-logo {
+    height: 33%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .main-header-section {
+    height: 30rem;
+  }
+  .main-elements {
+    margin: 65% 5% 0 0%;
+  }
+
+  .main-heading-1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  .main-heading-1 span {
+    letter-spacing: 0.09rem;
+    font-weight: 600;
+  }
+  .main-heading-2 {
+    font-size: 0.9rem;
+  }
+
+  .main-header-section {
+    height: 38rem;
+  }
+  .main-scroll {
+    margin: 150% 0 0 0%;
+  }
+  .main-background {
+    right: -70%;
+    transform: rotate(-18deg);
+  }
+
+  .back-logo {
+    height: 18%;
+  }
+}
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .main-background {
+    right: -52%;
+    transform: rotate(-18deg);
+  }
+  .main-scroll {
+    margin: 135% 0 0 0%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .main-header-section {
+    height: 35rem;
+  }
+  .main-elements {
+    margin: 85% 5% 0 0%;
+  }
+
+  .main-heading-1 {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  .main-heading-1 span {
+    letter-spacing: 0.09rem;
+    font-weight: 600;
+  }
+  .main-heading-2 {
+    font-size: 0.9rem;
+  }
+  .main-scroll {
+    margin: 170% 0 0 0%;
+  }
 }

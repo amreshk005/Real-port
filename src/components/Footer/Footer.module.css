@@ -1,0 +1,91 @@
+.Footer-container {
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.email {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-decoration: none;
+  transition: color 0.2s ease-out 0s;
+}
+
+.icons-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.3rem;
+}
+.icons-section a {
+  width: 2.6rem;
+  height: 2.6rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 0 1rem;
+  border: 1px solid #36a6ba;
+}
+.icons-section a:hover {
+  background-color: #127eb1;
+}
+
+.icons-section a img {
+  /* padding: 8px; */
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.Footer-Logo {
+  margin-top: 2rem;
+}
+
+.Footer-Logo img {
+  width: 90%;
+  height: 80%;
+}
+
+.Footer-Logo p {
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .Footer-container {
+    height: 25rem;
+  }
+  .email {
+    font-size: 0.9rem;
+  }
+  .Footer-Logo {
+    margin-top: 0.5rem;
+  }
+  .Footer-Logo img {
+    width: 70%;
+    height: 70%;
+  }
+  .icons-section a {
+    width: 2rem;
+    height: 2rem;
+  }
+  .icons-section a img {
+    /* padding: 8px; */
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .Footer-Logo p {
+    font-size: 0.5rem;
+  }
+}

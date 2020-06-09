@@ -19,6 +19,12 @@
   border-radius: 10rem;
   padding: 0.8rem 2.8rem;
   margin: 0rem;
+  margin-left: 10px;
   transition: all 0.2s ease-out 0s;
   /* background-color: #089eca; */
+}
+
+.button-link:hover {
+  /* margin-bottom: 2px; */
+  transform: translateY(-2px);
 }

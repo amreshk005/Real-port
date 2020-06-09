@@ -4,6 +4,7 @@
   min-height: 35rem;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 .about-container > * {
   width: 100%;
@@ -79,7 +80,59 @@
 }
 
 .resume-button:hover {
-  /* padding: 1rem 3.2rem; */
-  /* transform: translateY(-3px); */
   margin-top: 4.7rem;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .about-container {
+    margin-top: 0rem;
+  }
+  .about-degree {
+    font-size: 0.95rem;
+  }
+  .about-intro {
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+  .about-stack-title {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .about-stack {
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+  .resume-button {
+    margin-top: 3rem;
+  }
+  .resume-button:hover {
+    margin-top: 2.7rem;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .about-degree {
+    font-size: 0.8rem;
+  }
+  .about-intro {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    word-break: break-all;
+  }
+  .about-stack-title {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+  }
+  .about-stack {
+    font-size: 0.6rem;
+    line-height: 1.5rem;
+  }
+  .resume-button {
+    margin-top: 1rem;
+  }
+  .resume-button:hover {
+    margin-top: 0.7rem;
+  }
 }

@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import Header from "../Header/Header";
 import AboutMe from "../AboutMe/AboutMe";
 import Portfolio from "../Portfolio/Portfolio";
+import Footer from "../Footer/Footer";
 
 const FrontPage = (props) => {
   return (
@@ -15,6 +16,7 @@ const FrontPage = (props) => {
         <AboutMe />
         <Portfolio />
       </main>
+      <Footer />
     </div>
   );
 };

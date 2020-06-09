@@ -12,11 +12,12 @@
 }
 
 .frontpage-element {
-  max-width: 124rem;
+  max-width: 100%;
   z-index: 2;
   width: 100%;
   padding: 0 4rem;
   margin: 0 auto;
+  transition: all 0.2s ease-out 0s;
 }
 
 .frontpage-wrapped {
@@ -31,7 +32,8 @@
 }
 
 .frontpage-logo {
-  width: 50%;
+  flex: 1 1 50%;
+  transition: all 0.2s ease-out 0s;
 }
 
 .frontpage-logo a img {
@@ -44,12 +46,16 @@
 
   transition: none 0s ease 0s;
 }
+.frontpage-menu {
+  flex: 1 1 50%;
+}
 
 .frontpage-menu ul {
   width: 100%;
   display: flex;
   list-style-type: none;
-  justify-content: space-between;
+  justify-content: flex-start;
+  transition: all 0.2s ease-out 0s;
 }
 
 ul li {
@@ -61,4 +67,58 @@ ul li {
   font-size: 0.73rem;
   text-decoration: none;
   transition: color 0.2s ease-out 0s;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 1440px) {
+  ul li {
+    padding-right: 0;
+    padding-left: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .frontpage-logo {
+    flex: 1 1 40%;
+  }
+  .frontpage-menu {
+    flex: 1 1 60%;
+  }
+  ul li {
+    /* padding-right: ; */
+    /* padding-left: 12px; */
+    padding-left: 18px;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .frontpage-element {
+    padding: 0 4px;
+  }
+
+  .frontpage-logo {
+    flex: 1 1 5%;
+  }
+  .frontpage-menu {
+    flex: 1 1 95%;
+  }
+  ul li {
+    /* padding-right: ; */
+    /* padding-left: 12px; */
+    padding-left: 4px;
+    padding-right: 0;
+    font-weight: 500;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .frontpage-logo a img {
+    width: 95px;
+    height: 30px;
+    transition: none 0s ease 0s;
+  }
+  ul li {
+    font-weight: 600;
+    font-size: 10px;
+  }
 }

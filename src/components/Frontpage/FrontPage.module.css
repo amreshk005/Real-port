@@ -1,7 +1,7 @@
 .frontpage-container {
   display: flex;
   flex: 1 1 0%;
-  flex-direction: column-reverse;
+  flex-direction: column;
   min-height: 100vh;
   width: 100%;
   color: #575757;

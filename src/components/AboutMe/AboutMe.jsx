@@ -16,8 +16,9 @@ const AboutMe = () => {
           I'm <span className="coustom-span"> Amresh </span> , a 23 years old <span className="coustom-span">Front-end</span> developer, from <span className={style["coustom-span"]}>India</span> .
         </p>
         <p className={style["about-degree"]}>
-          After my college degree in <em> "Communication & Multimedia"</em> , I got a job as a "developer", where I stayed for almost 2 years, but I only developed websites with Wordpress custom themes, and HTML & CSS… So I wasn’t learning
-          and improving, I felt stuck.
+          {/* After my college degree in <em> "Communication & Multimedia"</em> , I got a job as a "developer", where I stayed for almost 2 years, but I only developed websites with Wordpress custom themes, and HTML & CSS… So I wasn’t learning
+          and improving, I felt stuck. */}
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga asperiores sint eos ut ipsam accusamus, minus, illum doloremque delectus eius facilis suscipit odio nesciunt quia veritatis impedit ea placeat nihil!
         </p>
       </div>
       <div className={style["about-stack-section"]} style={{ padding: "10px" }}>

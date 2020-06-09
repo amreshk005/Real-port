@@ -1,12 +1,10 @@
 import React from "react";
 import style from "./Portfolio.module.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Button from "../Helper/Button";
 import data from "../../data/data.json";
 
 const Portfolio = () => {
-  console.log(...data);
-
   return (
     <div className={style["portfolio-container"]}>
       <div className={style["portfolio-header"]}>
@@ -21,7 +19,7 @@ const Portfolio = () => {
           let selector = (index + 1) % 2;
 
           return (
-            <div className={style["portfolio-project-section"]}>
+            <div key={index + Date.now()} className={style["portfolio-project-section"]} style={{ marginTop: "2rem" }}>
               <h1 className="coustom-span" style={{ marginTop: "4rem", fontSize: "1.3rem" }}>
                 Amresh Portfolio
               </h1>

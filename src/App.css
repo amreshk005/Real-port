@@ -12,18 +12,18 @@ h2 {
 }
 
 .title {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: #127eb1;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   margin: 0 0 1rem;
   transition: color 0.2s ease-out 0s;
 }
 
 .sub-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #575757;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 10px !important;
   transition: color 0.2s ease-out 0s;
 }
@@ -56,3 +56,15 @@ h2 {
   transform: rotate(-2deg);
   background-color: #127eb1;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .sub-title {
+    font-size: 1rem;
+    margin-top: 5px !important;
+  }
+}
+/* @media only screen and (min-width: px) and (max-width: 767px) { */

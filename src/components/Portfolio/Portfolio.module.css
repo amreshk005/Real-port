@@ -54,6 +54,7 @@
   line-height: 1.7;
   margin: 0 0 1rem;
   transition: color 0.2s ease-out 0s;
+  word-break: break-all;
 }
 
 .project-tech {

@@ -12,19 +12,19 @@ const Footer = () => {
         </h2>
       </div>
       <div className={style["Footer-Link"]}>
-        <Link to="#" className={style["email"]}>
+        <a href="/#" className={style["email"]}>
           amreshk005@gmail.com
-        </Link>
+        </a>
         <div className={style["icons-section"]}>
-          <Link to="#">
+          <a href="https://github.com/amreshk005">
             <img src="/images/github-icon.svg" alt="github logo" />
-          </Link>
-          <Link to="#">
+          </a>
+          <a href="www.linkedin.com/in/amreshk005">
             <img src="/images/linkedin.png" alt="github logo" />
-          </Link>
-          <Link to="#">
+          </a>
+          <a href="https://twitter.com/amreshk005">
             <img src="/images/twitter.png" alt="github logo" />
-          </Link>
+          </a>
         </div>
       </div>
       <div className={style["Footer-Logo"]}>

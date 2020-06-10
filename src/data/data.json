@@ -2,41 +2,41 @@
   {
     "name": "Amresh Portfolio",
     "image": "/images/projects/portfolio.jpg",
-    "des": "This very website you're now watching. I wanted something fast and with good SEO for my portfolio, so a static website generator like Gatsby seemed like the best fit. It reads data from markdown files, so it's super easy forme to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't decide between a dark or light design.",
-    "Tech": "React - Styled Components - Gatsby",
-    "Link": "https://www.google.co.in/",
-    "GithubLink": "https://github.com/"
+    "des": "This very website you're now watching. I wanted something fast and with good SEO for my portfolio, so i would like to add react that seemed best fit. It reads data from markdown files, so it's super easy forme to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't update till now but i will update it very soon.",
+    "Tech": "React - Styled Components - Module CSS",
+    "Link": "https://amreshk005.netlify.app",
+    "GithubLink": "https://github.com/amreshk005/Real-port"
   },
   {
     "name": "Ecommerce",
     "image": "/images/projects/shop-web.jpg",
-    "des": "This very website you're now watching. I wanted something fast and with good SEO for my portfolio, so a static website generator like Gatsby seemed like the best fit. It reads data from markdown files, so it's super easy forme to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't decide between a dark or light design.",
-    "Tech": "React - Styled Components - Gatsby",
-    "Link": "https://www.google.co.in/",
-    "GithubLink": "https://github.com/"
+    "des": "This is Simple Ecommerce App which is clone project of @studioProper which gives you the functionality order the product,cart,detail-view And Dummy Authentication for the Users. It uses so many important concepts of React like Context API for state management.",
+    "Tech": "React - Styled Components - BootStrap",
+    "Link": "https://shop-web.netlify.app",
+    "GithubLink": "https://github.com/amreshk005/ppoperclone"
   },
   {
     "name": "Flipkart-clone",
     "image": "/images/projects/flipkart.jpg",
-    "des": "This very website you're now watching. I wanted something fast and with good SEO for my portfolio, so a static website generator like Gatsby seemed like the best fit. It reads data from markdown files, so it's super easy forme to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't decide between a dark or light design.",
-    "Tech": "React - Styled Components - Gatsby",
-    "Link": "https://www.google.co.in/",
-    "GithubLink": "https://github.com/"
-  },
-  {
-    "name": "ToDo",
-    "image": "/images/projects/todo.jpg",
-    "des": "This very website you're now watching. I wanted something fast and with good SEO for my portfolio, so a static website generator like Gatsby seemed like the best fit. It reads data from markdown files, so it's super easy forme to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't decide between a dark or light design.",
-    "Tech": "React - Styled Components - Gatsby",
-    "Link": "https://www.google.co.in/",
-    "GithubLink": "https://github.com/"
+    "des": "A simple clone of flipkart which uses a very latest technology it's also connected to firebase, it's built with React, css modules, Sass(scss). In react it uses React Redux for state mangement and I have also worked with Rest API, for Now it is not fully completed, Actually I'm working on it.",
+    "Tech": "React - Styled Components - sass",
+    "Link": "https://shopecom96.firebaseapp.com/",
+    "GithubLink": "https://github.com/amreshk005/shop_template_react"
   },
   {
     "name": "Movie Library",
     "image": "/images/projects/movie-js.jpg",
-    "des": "This very website you're now watching. I wanted something fast and with good SEO for my portfolio, so a static website generator like Gatsby seemed like the best fit. It reads data from markdown files, so it's super easy forme to keep adding Portfolio items as I keep developing stuff. It also has a cool dark mode switch since I couldn't decide between a dark or light design.",
-    "Tech": "React - Styled Components - Gatsby",
-    "Link": "https://www.google.co.in/",
-    "GithubLink": "https://github.com/"
+    "des": "This movie library is built with vanilla javascript which fetches the API for the data for the Searched input, the main Features of this website is showing the benefit of debouncing which reduces the number of calls of API request, and the are like pagination that allow users to paginate the data.",
+    "Tech": "vanilla javascript - Bootstrap - css modules",
+    "Link": "https://amreshk005.github.io/Movie-library/",
+    "GithubLink": "https://github.com/amreshk005/Movie-library"
+  },
+  {
+    "name": "ToDo",
+    "image": "/images/projects/todo.jpg",
+    "des": "A todo App, where the user has the ability to Add/Delete todos. Todos are saved to the state, which uses React and css modules.",
+    "Tech": "React - Styled Components - css modules",
+    "Link": "https://todo-phi.now.sh/",
+    "GithubLink": "https://github.com/amreshk005/todo-react"
   }
 ]

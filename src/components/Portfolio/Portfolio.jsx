@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Portfolio.module.css";
-import { Link } from "react-router-dom";
 import Button from "../Helper/Button";
 import data from "../../data/data.json";
 

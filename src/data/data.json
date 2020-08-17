@@ -20,7 +20,7 @@
     "image": "/images/projects/flipkart.jpg",
     "des": "A simple clone of flipkart which uses a very latest technology it's also connected to firebase, it's built with React, css modules, Sass(scss). In react it uses React Redux for state mangement and I have also worked with Rest API, for Now it is not fully completed, Actually I'm working on it.",
     "Tech": "React - Styled Components - sass",
-    "Link": "https://shopecom96.firebaseapp.com/",
+    "Link": "https://ekart005.web.app/products",
     "GithubLink": "https://github.com/amreshk005/shop_template_react"
   },
   {

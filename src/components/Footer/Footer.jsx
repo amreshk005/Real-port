@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Footer.module.css";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,7 +18,7 @@ const Footer = () => {
           <a href="https://github.com/amreshk005">
             <img src="/images/github-icon.svg" alt="github logo" />
           </a>
-          <a href="www.linkedin.com/in/amreshk005">
+          <a href="https://www.linkedin.com/in/amreshk005/">
             <img src="/images/linkedin.png" alt="github logo" />
           </a>
           <a href="https://twitter.com/amreshk005">

@@ -1,8 +1,17 @@
 import React from "react";
 import style from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
+  const linkStyle = {
+    textDecoration: "none",
+    color: "#575757",
+  };
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <header className={style["frontpage-navbar"]}>
       <div className={style["frontpage-element"]}>
@@ -14,7 +23,11 @@ const Navbar = () => {
           </div>
           <div className={style["frontpage-menu"]}>
             <ul>
-              <li>About me</li>
+              <li>
+                <Link style={linkStyle} activeClass="active" to="aboutMe" spy={true} smooth={true} duration={250}>
+                  About me
+                </Link>
+              </li>
               <li>Portfolio</li>
               <li>Contact</li>
               <li>Toggle</li>

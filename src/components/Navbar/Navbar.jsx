@@ -1,16 +1,28 @@
 import React from "react";
 import style from "./Navbar.module.css";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const linkStyle = {
-    textDecoration: "none",
-    color: "#575757",
-  };
+  function getScroll(getTop) {
+    window.scrollTo({ left: 0, top: getTop, behavior: "smooth" });
+  }
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+  function scrollHandler(e) {
+    let type = e.target.getAttribute("name");
+    switch (type) {
+      case "about":
+        getScroll(700);
+        break;
+      case "portfolio":
+        getScroll(1350);
+        break;
+      case "contact":
+        getScroll(4000);
+        break;
+      default:
+        break;
+    }
+  }
 
   return (
     <header className={style["frontpage-navbar"]}>
@@ -23,13 +35,15 @@ const Navbar = () => {
           </div>
           <div className={style["frontpage-menu"]}>
             <ul>
-              <li>
-                <Link style={linkStyle} activeClass="active" to="aboutMe" spy={true} smooth={true} duration={250}>
-                  About me
-                </Link>
+              <li name="about" onClick={scrollHandler}>
+                About me
               </li>
-              <li>Portfolio</li>
-              <li>Contact</li>
+              <li name="portfolio" onClick={scrollHandler}>
+                Portfolio
+              </li>
+              <li name="contact" onClick={scrollHandler}>
+                Contact
+              </li>
               <li>Toggle</li>
             </ul>
           </div>

@@ -8,14 +8,14 @@
   z-index: 20;
   background-color: #ffffff;
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-  transition: background 0.2s ease-out 0s;
+  transition: background-color 0.2s ease-out 0s;
 }
 
 .frontpage-element {
   max-width: 100%;
   z-index: 2;
   width: 100%;
-  padding: 0 4rem;
+  /* padding: 0 4rem; */
   margin: 0 auto;
   transition: all 0.2s ease-out 0s;
 }
@@ -34,6 +34,7 @@
 .frontpage-logo {
   flex: 1 1 50%;
   transition: all 0.2s ease-out 0s;
+  padding-left: 25px;
 }
 
 .frontpage-logo a img {
@@ -52,9 +53,12 @@
 
 .frontpage-menu ul {
   width: 100%;
+  height: 100%;
   display: flex;
   list-style-type: none;
-  justify-content: flex-start;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 0px;
   transition: all 0.2s ease-out 0s;
 }
 
@@ -88,11 +92,11 @@ ul li {
     /* padding-right: ; */
     /* padding-left: 12px; */
     padding-left: 18px;
-    padding-right: 0;
+    padding-right: 24px;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 376px) and (max-width: 767px) {
   .frontpage-element {
     padding: 0 4px;
   }
@@ -103,22 +107,41 @@ ul li {
   .frontpage-menu {
     flex: 1 1 95%;
   }
+  .frontpage-menu ul {
+    padding-left: 0;
+  }
   ul li {
     /* padding-right: ; */
     /* padding-left: 12px; */
     padding-left: 4px;
-    padding-right: 0;
+    padding-right: 24px;
     font-weight: 500;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 375px) {
+  .frontpage-logo {
+    padding-left: 5px;
+    flex: 1 1 40%;
+  }
   .frontpage-logo a img {
     width: 95px;
     height: 30px;
     transition: none 0s ease 0s;
   }
+  .frontpage-menu {
+    flex: 1 1 92%;
+  }
+  .frontpage-menu ul {
+    padding-left: 0px;
+    justify-content: space-around;
+  }
   ul li {
+    padding-left: 0;
     font-weight: 600;
     font-size: 10px;
+    padding-right: 6px;
+  }
+  .ant-toggle {
+    min-width: 35px !important;
   }
 }

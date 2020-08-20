@@ -3,13 +3,14 @@ import style from "./Portfolio.module.css";
 import Button from "../Helper/Button";
 import data from "../../data/data.json";
 
-const Portfolio = () => {
+const Portfolio = (props) => {
+  let { color } = props;
   return (
     <div className={style["portfolio-container"]}>
       <div className={style["portfolio-header"]}>
         <h1 className="title">Portfolio</h1>
-        <h2 className="sub-title">
-          Check <span>what</span> I've been doing <span>lately</span>
+        <h2 className="sub-title" style={{ color: `${color}` }}>
+          Check <span style={{ color: `${color}` }}>what</span> I've been doing <span style={{ color: `${color}` }}>lately</span>
         </h2>
       </div>
       <div className={style["portfolio-column"]}>
@@ -29,14 +30,16 @@ const Portfolio = () => {
                   <img src={e.image} alt="project-img" />
                 </div>
                 <div className={style["project-info-section"]}>
-                  <p className={style["project-info"]}>{e.des}</p>
+                  <p className={style["project-info"]} style={{ color: `${color}` }}>
+                    {e.des}
+                  </p>
                   <p className={style["project-tech"]}>{e.Tech}</p>
                   <div className={style["project-button-section"]}>
                     {/* <Link to={{ pathname: e.Link }}> */}
                     <Button Link={e.Link} background="#089eca" color="#fff" border="1px solid transparent" data="visit" />
                     {/* </Link> */}
                     {/* <Link> */}
-                    <Button Link={e.GithubLink} background="transparent" color="#333" border="1px solid #333" data="source" />
+                    <Button Link={e.GithubLink} background="transparent" color={color} border="1px solid #333" data="source" marginLeft="10px" />
                     {/* </Link> */}
                   </div>
                 </div>

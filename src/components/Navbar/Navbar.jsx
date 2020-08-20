@@ -1,12 +1,16 @@
 import React from "react";
 import style from "./Navbar.module.css";
+import { image_url, image_url_white } from "../Helper/image_url";
 import { Link } from "react-router-dom";
+import "antd/dist/antd.css";
+import { Switch } from "antd/es";
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { color, background } = props.styles;
+  const { checkHandler, checked } = props;
   function getScroll(getTop) {
     window.scrollTo({ left: 0, top: getTop, behavior: "smooth" });
   }
-
   function scrollHandler(e) {
     let type = e.target.getAttribute("name");
     switch (type) {
@@ -23,28 +27,23 @@ const Navbar = () => {
         break;
     }
   }
-
   return (
-    <header className={style["frontpage-navbar"]}>
+    <header className={style["frontpage-navbar"]} style={{ backgroundColor: `${background}` }}>
       <div className={style["frontpage-element"]}>
         <div className={style["frontpage-wrapped"]}>
           <div className={style["frontpage-logo"]}>
-            <Link to="/">
-              <img style={{ opacity: 1 }} src="/images/amresh-logo.jpeg" alt="logo" />
-            </Link>
+            <Link to="/">{checked ? <img style={{ opacity: 1, height: "90%" }} src={image_url} alt="logo" /> : <img style={{ height: "90%" }} src={image_url_white} alt="light_image" />}</Link>
           </div>
           <div className={style["frontpage-menu"]}>
             <ul>
-              <li name="about" onClick={scrollHandler}>
-                About me
+              {["About me", "Portfolio", "Contact"].map((e) => (
+                <li key={e + Date.now()} name="about" style={{ color: `${color}` }} onClick={scrollHandler}>
+                  {e}
+                </li>
+              ))}
+              <li>
+                <Switch className={style["ant-toggle"]} checked={checked} onChange={checkHandler} />
               </li>
-              <li name="portfolio" onClick={scrollHandler}>
-                Portfolio
-              </li>
-              <li name="contact" onClick={scrollHandler}>
-                Contact
-              </li>
-              <li>Toggle</li>
             </ul>
           </div>
         </div>

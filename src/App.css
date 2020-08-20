@@ -1,5 +1,5 @@
-.App {
-  font-family: Montserrat, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", " !default";
+body {
+  font-family: 'Montserrat', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", " !default";
   -webkit-font-smoothing: antialiased;
 }
 

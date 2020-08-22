@@ -33,7 +33,9 @@ const Portfolio = (props) => {
                   <p className={style["project-info"]} style={{ color: `${color}` }}>
                     {e.des}
                   </p>
-                  <p className={style["project-tech"]}>{e.Tech}</p>
+                  <p className={style["project-tech"]} style={{ color: `${color}` }}>
+                    {e.Tech}
+                  </p>
                   <div className={style["project-button-section"]}>
                     {/* <Link to={{ pathname: e.Link }}> */}
                     <Button Link={e.Link} background="#089eca" color="#fff" border="1px solid transparent" data="visit" />

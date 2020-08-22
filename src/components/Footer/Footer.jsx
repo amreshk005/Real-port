@@ -19,15 +19,33 @@ function Footer(props) {
           amreshk005@gmail.com
         </a>
         <div className={style["icons-section"]}>
-          <a href="https://github.com/amreshk005">
-            <img src="/images/github-icon.svg" alt="github logo" />
-          </a>
-          <a href="https://www.linkedin.com/in/amreshk005/">
-            <img src="/images/linkedin.png" alt="github logo" />
-          </a>
-          <a href="https://twitter.com/amreshk005">
-            <img src="/images/twitter.png" alt="github logo" />
-          </a>
+          {checked ? (
+            <a href="https://github.com/amreshk005">
+              <img src="/images/github-icon.svg" alt="github logo" />
+            </a>
+          ) : (
+            <a href="https://github.com/amreshk005">
+              <img src="/images/github-icon.svg" alt="github logo" />
+            </a>
+          )}
+          {checked ? (
+            <a href="https://www.linkedin.com/in/amreshk005/">
+              <img src="/images/linkedin.png" alt="github logo" />
+            </a>
+          ) : (
+            <a href="https://www.linkedin.com/in/amreshk005/">
+              <img src="/images/linkedin.png" alt="github logo" />
+            </a>
+          )}
+          {checked ? (
+            <a href="https://twitter.com/amreshk005">
+              <img src="/images/twitter.png" alt="github logo" />
+            </a>
+          ) : (
+            <a href="https://twitter.com/amreshk005">
+              <img src="/images/twitter.png" alt="github logo" />
+            </a>
+          )}
         </div>
       </div>
       <div className={style["Footer-Logo"]}>

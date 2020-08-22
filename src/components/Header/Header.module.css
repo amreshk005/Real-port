@@ -86,7 +86,6 @@
 
 .word-changing span {
   opacity: 1;
-  /* transform: ; */
   position: absolute;
   top: 0;
   left: 0;
@@ -188,9 +187,12 @@
   .main-scroll {
     margin: 135% 0 0 0%;
   }
+  .word-changing span {
+    font-size: 12px;
+  }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 374px) {
+@media only screen and (min-width: 320px) {
   .main-header-section {
     height: 35rem;
   }
@@ -211,5 +213,8 @@
   }
   .main-scroll {
     margin: 170% 0 0 0%;
+  }
+  .word-changing span {
+    font-size: 12px;
   }
 }

@@ -107,4 +107,11 @@
   .portfolio-project-section {
     margin-top: 0 !important;
   }
+
+  .project-info {
+    margin-top: 30px;
+  }
+  .portfolio-project {
+    flex-direction: column !important;
+  }
 }
